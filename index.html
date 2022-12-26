@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>OneUI - Bootstrap 4 Admin Template &amp; UI Framework</title>
+
+        <meta name="description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
+        <meta property="og:site_name" content="OneUI">
+        <meta property="og:description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Fonts and OneUI framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+       <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/amethyst.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+
+    <style>
+        .bg-white-90{
+            background-color: rgba(211, 228, 255, 0.7) !important;
+        }
+
+        .card-custom{
+            border: none;
+        }
+
+        .image-banner .custom-banner{
+            height: 24rem;
+        }
+
+        .caraousel-rektorat .card-img-top{
+            border-radius: 10px;
+        }
+
+        ul{
+            text-decoration: none;
+            list-style: none;
+        }
+        .rektorat li{
+            margin-bottom: 0.7rem;
+        }
+
+        .carousel-indicators .active{
+            opacity: 1;
+        }
+
+        .carousel-indicators li{
+            border-bottom: none;
+            border-top: none;
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-radius: 20px;
+        }
+        .slick-initialized .slick-slide{
+            display: flex !important;
+        }
+    </style>
+
+    <body>
+        
+        <div id="page-container" class="page-header-dark main-content-boxed page-home">
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div class="d-flex align-items-center">
+                        <!-- Logo -->
+                        <a class="font-w600 font-size-h5 tracking-wider text-dual mr-3" href="index.html">
+                           <img class="w-8rem" src="./assets/media/images/umm.png" alt="" srcset="">
+                        </a>
+                        <!-- END Logo -->
+
+                     
+                        <!-- END Notifications Dropdown -->
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="d-flex align-items-center">
+                        <!-- Open Search Section (visible on smaller screens) -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-sm btn-dual d-md-none" data-toggle="layout" data-action="header_search_on">
+                            <i class="fa fa-fw fa-search"></i>
+                        </button>
+                        <!-- END Open Search Section -->
+
+                        <!-- Search Form (visible on larger screens) -->
+                        <form class="d-none d-md-inline-block" action="bd_search.html" method="POST">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control form-control-alt" placeholder="Search.." id="page-header-search-input2" name="page-header-search-input2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-body border-0">
+                                        <i class="fa fa-fw fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- END Search Form -->
+
+                      
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header bg-white">
+                    <div class="content-header">
+                        <form class="w-100" action="bd_search.html" method="POST">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <button type="button" class="btn btn-alt-danger" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-fw fa-times-circle"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-primary-lighter">
+                    <div class="content-header">
+                        <div class="w-100 text-center">
+                            <i class="fa fa-fw fa-circle-notch fa-spin text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Navigation -->
+                <div class="bg-white image-banner">
+                    <div class="mb-0 block block-rounded bg-transparent bg-image custom-banner" style="background-image: url('assets/media/images/image-kampus.jpeg');">
+                        <div class="block-content block-content-full bg-white-90 custom-banner d-flex justify-content-center align-items-center">
+                            <div class="py-4 text-center">
+                                <h1 class="mb-2" style="font-weight: bold;">
+                                    Staff-site Universitas Muhammadiyah Malang
+                                </h1>
+                                <h2 class="h4 font-w400 text-muted mb-0">
+                                    Selamat datang di website staff Universitas Muhammadiyah Malang
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content py-3">
+                        <!-- Toggle Main Navigation -->
+                        <div class="d-lg-none">
+                            <!-- Class Toggle, functionality initialized in Helpers.coreToggleClass() -->
+                            <button type="button" class="btn btn-block btn-alt-secondary d-flex justify-content-between align-items-center" data-toggle="class-toggle" data-target="#main-navigation" data-class="d-none">
+                                Menu
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <!-- END Toggle Main Navigation -->
+
+                        
+
+                        <!-- Main Navigation -->
+                        <div id="main-navigation" class="d-none d-lg-block mt-2 mt-lg-0">
+                            <ul class="nav-main nav-main-horizontal nav-main-hover">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link active" href="bd_dashboard.html">
+                                        <i class="nav-main-link-icon si si-compass"></i>
+                                        <span class="nav-main-link-name">Home</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link active" href="bd_dashboard.html">
+                                        <i class="nav-main-link-icon si si-compass"></i>
+                                        <span class="nav-main-link-name">Karyawan</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link active" href="bd_dashboard.html">
+                                        <i class="nav-main-link-icon si si-compass"></i>
+                                        <span class="nav-main-link-name">Dosen</span>
+                                    </a>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                        <!-- END Main Navigation -->
+                    </div>
+                </div>
+                <!-- END Navigation -->
+
+            
+                <div class="content">
+                    <div class="block shadow p-4" style="border-top: 5px solid #960000;">
+                        <!-- <h2 style="font-weight: bold;">REKTORAT</h2> -->
+                            <!-- <hr> -->
+                            <div class="carousel-rektorat">
+                                <div class="row">
+                                    <div class="col-md-4 my-4">
+                                        <img class="card-img-top shadow" src="./assets/media/images/dosen/1.JPG" alt="Card image">
+                                    </div>
+            
+                                    <div class="col-md-8 rektorat">
+                                        <ul class="p-0 my-4">
+                                            <li>
+                                                <h3 class="" style="font-weight: bold;">Biografi Singkat</h3>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <span><b>Nama : </b></span> <span>
+                                                    <a href="/pejabat/detail/390.html">Dr. Nur Subeki, ST, . MT</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>NIDN : </b>
+                                                </span>
+                                                <b> 
+        
+                                                </b>
+                                                <span> 0704086901</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>Jenis Kelamin : </b>
+                                                </span> 
+                                                <span> Laki-laki</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>Email : </b>
+                                                </span>
+                                                <b> 
+        
+                                                </b>
+                                                <span> nursubeki@umm.ac.id</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>Blog : </b>
+                                                </span>
+                                                <b> 
+        
+                                                </b>
+                                                <span>
+                                                    <a href="#">-</a>
+                                                </span></li>
+                                            <li>
+                                                <span><b>Pendidikan : </b>
+                                                </span> <span>S3</span></li>
+                                            <li><span><b>Jabatan Struktural : </b></span> <span>Wakil Rektor III</span></li>
+                                        </ul>   
+                                        
+                                    </div>
+                                
+                           
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 my-4">
+                                        <img class="card-img-top shadow" src="./assets/media/images/dosen/1.JPG" alt="Card image">
+                                    </div>
+            
+                                    <div class="col-md-8 rektorat">
+                                        <ul class="p-0 my-4">
+                                            <li>
+                                                <h3 class="" style="font-weight: bold;">Biografi Singkat</h3>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <span><b>Nama : </b></span> <span>
+                                                    <a href="/pejabat/detail/390.html">Dr. Nur Subeki, ST, . MT</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>NIDN : </b>
+                                                </span>
+                                                <b> 
+        
+                                                </b>
+                                                <span> 0704086901</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>Jenis Kelamin : </b>
+                                                </span> 
+                                                <span> Laki-laki</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>Email : </b>
+                                                </span>
+                                                <b> 
+        
+                                                </b>
+                                                <span> nursubeki@umm.ac.id</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <b>Blog : </b>
+                                                </span>
+                                                <b> 
+        
+                                                </b>
+                                                <span>
+                                                    <a href="#">-</a>
+                                                </span></li>
+                                            <li>
+                                                <span><b>Pendidikan : </b>
+                                                </span> <span>S3</span></li>
+                                            <li><span><b>Jabatan Struktural : </b></span> <span>Wakil Rektor III</span></li>
+                                        </ul>   
+                                        
+                                    </div>
+                                
+                           
+                                </div>
+                            </div>
+
+                      
+                    </div>
+
+                    <div class="block p-4" style="border-top: 5px solid #272e38;">
+                        <div style="display: flex;justify-content: space-between;">
+                            <h4 style="font-weight: bold;">Profile Dosen</h4>
+                            <a href="">VIEW ALL</a>
+                        </div>
+                        <hr> 
+                        <div class="row">
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/2.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/2.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/2.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/2.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+                                                      
+                        </div>
+                    </div>
+                   
+
+                    <div class="block p-4" style="border-top: 5px solid #272e38;">
+                        <div style="display: flex;justify-content: space-between;">
+                            <h4 style="font-weight: bold;">Profile Karyawan</h4>
+                            <a href="">VIEW ALL</a>
+                        </div>
+                        <hr> 
+                        <div class="row">
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/3.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/3.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/3.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-3 my-4">
+                                <div class="card shadow card-custom" style="width: 200px;">
+                                    <img class="card-img-top" src="./assets/media/images/dosen/3.jpg    " alt="Card image">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Nazarudin, S.Kom. M.Kom</h4>
+                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                  </div>
+                            </div>
+                                                      
+                        </div>
+                    </div>
+
+                </div>
+             
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="bg-white mt-2">
+                <div class="content py-3">
+                    <div class="row font-size-sm">
+                        <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
+                         <a href="">Ady Juliyanto</a>
+                        </div>
+                        <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
+                            <a class="font-w600" href="https://1.envato.market/AVD6j" target="_blank">Programmer Sehat</a> &copy; <span data-toggle="year-copy"></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        <!--
+            OneUI JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+        <script src="assets/js/oneui.core.min.js"></script>
+
+        <!--
+            OneUI JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_js/main/app.js
+        -->
+        <script src="assets/js/oneui.app.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.carousel-rektorat').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    // adaptiveHeight: true
+                });
+            });
+        </script>
+        
+    </body>
+</html>
